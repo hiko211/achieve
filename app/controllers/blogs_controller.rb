@@ -34,6 +34,12 @@ class BlogsController < ApplicationController
   end
   
   def update
+   # binding.pry
+   if @blog.update(blogs_params)
+    redirect_to blogs_path
+   else
+    render 'edit'
+   end
   end
   
   def destroy
