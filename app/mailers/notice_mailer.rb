@@ -14,7 +14,7 @@ class NoticeMailer < ApplicationMailer
 
    def sendmail_contact(contact)
    @contact = contact
-    mail to: "hiko211@gmail.com",
+    mail to: "@contact.email.com",
          subject: "【Achieve】お問い合わせが投稿されました"
    end
 end
