@@ -79,7 +79,7 @@ Rails.application.configure do
 
   ActionMailer::Base.delivery_method = :smtp
   ActionMailer::Base.smtp_settings =
-  config.action_mailer.default_url_options = { host: 'arcane-badlands-95336' }
+  config.action_mailer.default_url_options = { host: 'https://arcane-badlands-95336.herokuapp.com/' }
   {
    user_name: "SENDGRID_USERNAME",
    password: "SENDGRID_PASSWORD",
