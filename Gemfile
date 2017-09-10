@@ -59,8 +59,17 @@ gem 'cancan'
 
 gem 'activeresource'
 
+gem 'omniauth'
+gem 'omniauth-twitter'
+gem 'omniauth-facebook'
+
+#image uploader
+gem 'carrierwave'
+gem 'mini_magick'
+
 group :development do
   gem 'letter_opener_web'
   gem 'pry-rails'
   gem 'better_errors'
+  gem 'dotenv-rails'
 end
