@@ -7,7 +7,6 @@
     <div class="row">
       <h5><strong><%= blog.name %></strong></h5>
       <h4><strong><%= blog.title %></strong></h4>
-      <h4><strong><%= blog.user.avatar %></strong></h4>
       <p><%= blog.content %></p>
       <%= profile_img(blog.user) if blog.user.present? %>
       <%#= f.file_field :avatar %>
