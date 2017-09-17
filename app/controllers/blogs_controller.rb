@@ -1,5 +1,5 @@
 class BlogsController < ApplicationController
- before_action :set_blog, only: [:edit, :update, :destroy]
+ before_action :set_blog, only: [:show, :edit, :update, :destroy]
  before_action :authenticate_user!
 
   def index
@@ -32,6 +32,11 @@ class BlogsController < ApplicationController
   end
 
   def edit
+  end
+
+  def show
+    @comment = @blog.comments.build
+    @comments = @blog.comments
   end
 
   def update
