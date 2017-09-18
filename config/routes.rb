@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root 'top#index'
 
   resources :blogs, only: [:index, :new, :create, :edit, :update, :destroy] do
    collection do
@@ -19,16 +20,19 @@ Rails.application.routes.draw do
 
  resources :poems, only: [:index, :show]
 
+
+
+ resources :relationships, only: [:create, :destroy]
+
  devise_for :users, controllers: {
    registrations: "users/registrations",
    omniauth_callbacks: "users/omniauth_callbacks"
   }
 
+ resources :users, only: [:index, :show]
 
  if Rails.env.development?
   mount LetterOpenerWeb::Engine, at: "/letter_opener"
  end
-
- root 'top#index'
 
 end

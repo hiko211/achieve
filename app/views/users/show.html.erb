@@ -1,0 +1,19 @@
+<div class="container">
+  <h2><%= @user.name %></h2>
+    <div class="field">
+        <%= profile_img(@user) %>
+    </div>
+
+  <h2>フォローしている人</h2>
+  <% @user.followed_users.each do |user| %>
+    <h2><%= user.name %></h2>
+    <%= profile_img(user) %>
+  <% end %>
+
+  <h2>フォローされている人</h2>
+  <% @user.followers.each do |user| %>
+    <h2><%= user.name %></h2>
+  <% end %>
+
+
+</div>
