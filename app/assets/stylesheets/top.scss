@@ -54,6 +54,7 @@ header {
 }
 .main-header {
   padding-bottom: 15%;
+  margin: 0 auto;
   width: 100%;
   background-size: cover;
   background-image:  url("header.jpg");
@@ -98,6 +99,8 @@ html {
 
 body {
   text-align: center;
+  padding: 0;
+  margin: 0;
 }
 
 .page-top-btn {
