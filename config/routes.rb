@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'notifications/index'
+
   root 'top#index'
 
   resources :blogs, only: [:index, :new, :create, :edit, :update, :destroy] do
