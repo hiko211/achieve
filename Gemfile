@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-
+gem 'therubyracer', platforms: :ruby
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.3'
 # Use postgresql as the database for Active Record
@@ -41,6 +41,12 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+  #capistrano'実装
+  gem 'capistrano', '3.6.0'
+  gem 'capistrano-bundler'
+  gem 'capistrano-rails'
+  gem 'capistrano-rbenv'
+  gem 'capistrano3-unicorn'
 end
 
 gem 'twitter-bootstrap-rails'
@@ -66,6 +72,9 @@ gem 'omniauth-facebook'
 gem 'pusher'
 
 gem 'fog'
+
+gem 'dotenv-rails'
+gem 'unicorn'
 
 #image uploader
 gem 'carrierwave'
