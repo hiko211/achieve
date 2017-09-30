@@ -65,6 +65,8 @@ gem 'omniauth-facebook'
 
 gem 'pusher'
 
+gem 'fog'
+
 #image uploader
 gem 'carrierwave'
 gem 'mini_magick'
